@@ -6,7 +6,8 @@ export default {
         extend: {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
-                dongle: ["Dongle", "sans-serif"],
+                spacemono: ["Space Mono", "monospace"],
+                dosis: ["Dosis", "sans-serif"],
                 bogle: ["BBH Sans Bogle", "sans-serif"],
                 game: ['"Press Start 2P"', "system-ui"],
             },
