@@ -10,3 +10,7 @@ body {
 .dark body {
     @apply bg-purple-950 text-white;
 }
+
+.btn {
+    @apply py-2 px-4 rounded-2xl;
+}

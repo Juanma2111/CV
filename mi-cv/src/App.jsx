@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import { TypeAnimation } from "react-type-animation";
 
 import userImage from "./assets/user.jpg";
 
@@ -7,32 +8,59 @@ function App() {
         <>
             <Navbar />
             <div className="flex flex-col h-screen pt-16">
-                <div className="introduction flex flex-col md:flex-row justify-center items-center my-3 px-2 md:px-8">
+                <div
+                    id="introduction"
+                    className="flex flex-col md:flex-row justify-center items-center my-3 px-2 md:px-8"
+                >
                     {/*Imagen*/}
-                    <div className="m-8 px-10">
+                    <div className="flex flex-col m-8 px-10 text-purple-950 text-center items-center">
                         <img
                             src={userImage}
                             alt="Juanma Molins"
-                            className="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-lg"
+                            className="mb-2 w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-lg"
                         />
+                        <h3 className="my-4 font-spacemono md:text-lg">
+                            jmmolinsdiaz@gmail.com
+                        </h3>
+                        <button className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white">
+                            {/* HACERLO FUNCIONAR ---------------------------------------------------------------------------------------- */}
+                            Descargar CV
+                        </button>
                     </div>
 
                     <div
                         id="title"
-                        className="text-purple-950 flex flex-col items-center text-center m-2 md:m-6 md:px-10"
+                        className="flex flex-col m-2 md:m-6 md:px-10 text-purple-950 items-center text-center"
                     >
-                        <h1 className="font-game text-2xl md:text-4xl flex flex-col gap-4">
-                            <span>Hi, mi name is</span>
-                            <span className="font-bold">
-                                JUAN MANUEL MOLINS
+                        <h1 className="flex flex-col gap-4 font-game text-2xl md:text-4xl whitespace-pre-line">
+                            <span>
+                                {" "}
+                                {/** Añadir tamaño minimo para normal y md: - para que no se mueva la foto */}
+                                <TypeAnimation
+                                    sequence={[
+                                        500,
+                                        "Hi, mi name is\n\nJUAN MANUEL MOLINS",
+                                    ]}
+                                    speed={10}
+                                    wrapper="span"
+                                    repeat={0}
+                                    cursor={true}
+                                />
                             </span>
                         </h1>
-                        <h2 className="mt-8 font-spacemono text-xl md:text-2xl">
-                            I am a Junior Web Developer
+                        <h2 className="mt-10 font-spacemono text-xl md:text-2xl">
+                            <TypeAnimation
+                                sequence={[4100, "I am a Junior Web Developer"]}
+                                speed={10}
+                                wrapper="span"
+                                repeat={0}
+                                cursor={0}
+                            />
                         </h2>
                     </div>
                 </div>
 
+                {/* PRUEBAS -------------------------------------------- */}
                 <br />
                 <br />
                 <br />
