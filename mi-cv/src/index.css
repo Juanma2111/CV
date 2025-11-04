@@ -5,6 +5,7 @@
 /* Estilos globales */
 body {
     background-color: beige;
+    @apply text-purple-950;
 }
 
 .dark body {

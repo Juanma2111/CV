@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 import { TypeAnimation } from "react-type-animation";
 
 import userImage from "./assets/user.jpg";
@@ -7,17 +8,17 @@ function App() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col h-screen pt-16">
+            <div className="flex flex-col pt-16 h-screen">
                 <div
                     id="introduction"
-                    className="flex flex-col md:flex-row justify-center items-center my-3 px-2 md:px-8"
+                    className="grid grid-cols-1 md:grid-cols-3 gap-5 my-10 px-2 md:px-8 justify-center items-center"
                 >
                     {/*Imagen*/}
-                    <div className="flex flex-col m-8 px-10 text-purple-950 text-center items-center">
+                    <div className="md:col-span-1 flex flex-col px-10 text-center items-center">
                         <img
                             src={userImage}
                             alt="Juanma Molins"
-                            className="mb-2 w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-lg"
+                            className="mb-2 w-40 h-40 md:w-48 md:h-48 lg:w-60 lg:h-60 object-cover rounded-full shadow-lg"
                         />
                         <h3 className="my-4 font-spacemono md:text-lg">
                             jmmolinsdiaz@gmail.com
@@ -28,14 +29,13 @@ function App() {
                         </button>
                     </div>
 
+                    {/*Texto animado */}
                     <div
                         id="title"
-                        className="flex flex-col m-2 md:m-6 md:px-10 text-purple-950 items-center text-center"
+                        className="md:col-span-2 flex flex-col m-2 md:m-6 md:px-10 items-center text-center min-h-40"
                     >
-                        <h1 className="flex flex-col gap-4 font-game text-2xl md:text-4xl whitespace-pre-line">
+                        <h1 className="flex flex-col gap-4 font-game text-xl md:text-3xl lg:text-5xl whitespace-pre-line">
                             <span>
-                                {" "}
-                                {/** Añadir tamaño minimo para normal y md: - para que no se mueva la foto */}
                                 <TypeAnimation
                                     sequence={[
                                         500,
@@ -44,7 +44,7 @@ function App() {
                                     speed={10}
                                     wrapper="span"
                                     repeat={0}
-                                    cursor={true}
+                                    cursor={0}
                                 />
                             </span>
                         </h1>
@@ -60,6 +60,8 @@ function App() {
                     </div>
                 </div>
 
+                <Skills />
+
                 {/* PRUEBAS -------------------------------------------- */}
                 <br />
                 <br />
@@ -73,7 +75,12 @@ function App() {
                     <p className="text-gray-600 mt-4">
                         Tailwind está funcionando 🎨
                     </p>
-                    <p className="mt-4 font-bold">venga a trabaja</p>
+                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                        <div
+                            className="bg-gradient-to-r from-purple-600 to-indigo-500 h-full transition-all duration-700"
+                            style={{ width: "80%" }}
+                        ></div>
+                    </div>
                 </div>
             </div>
         </>
