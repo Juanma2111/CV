@@ -1,7 +1,15 @@
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import { TypeAnimation } from "react-type-animation";
 
+{
+    /** Components */
+}
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+import About from "./components/About";
+
+{
+    /** Others */
+}
 import userImage from "./assets/user.jpg";
 import gitIcon from "./assets/logos/github_icon.png";
 
@@ -51,7 +59,7 @@ function App() {
                                 <TypeAnimation
                                     sequence={[
                                         500,
-                                        "Hi, mi name is\n\nJUAN MANUEL MOLINS",
+                                        "Hi, my name is\n\nJUAN MANUEL MOLINS",
                                     ]}
                                     speed={10}
                                     wrapper="span"
@@ -72,7 +80,23 @@ function App() {
                     </div>
                 </div>
 
-                <Skills />
+                <div
+                    id="skills"
+                    className="flex flex-col m-8 mt-14 text-start items-center"
+                >
+                    <h2 className="font-game text-3xl mb-10">SKILLS</h2>
+
+                    <Skills />
+                </div>
+
+                <div
+                    id="about"
+                    className="flex flex-col m-8 mt-14 text-start items-center"
+                >
+                    <h2 className="font-game text-3xl mb-10">ABOUT ME</h2>
+
+                    <About />
+                </div>
 
                 {/* PRUEBAS -------------------------------------------- */}
                 <br />
@@ -87,12 +111,6 @@ function App() {
                     <p className="text-gray-600 mt-4">
                         Tailwind está funcionando 🎨
                     </p>
-                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                        <div
-                            className="bg-gradient-to-r from-purple-600 to-indigo-500 h-full transition-all duration-700"
-                            style={{ width: "80%" }}
-                        ></div>
-                    </div>
                 </div>
             </div>
         </>

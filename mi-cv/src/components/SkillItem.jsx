@@ -30,8 +30,8 @@ export default function SkillItem({ icon, alt, level }) {
     });
 
     return (
-        <div ref={ref} className="flex flex-col items-center">
-            {/* AÑADIR ANIMACIÓN Y COLORES -------------------------------------------------------------------------------------------------- */}
+        <div ref={ref} className="flex flex-col items-center group mb-10">
+            {/* AÑADIR DARK MODE -------------------------------------------------------------------------------------------------- */}
             <svg
                 className=" w-24 h-24 md:w-40 md:h-40 lg:w-48 lg:h-48 transform -rotate-90"
                 viewBox="0 0 100 100"
@@ -67,8 +67,15 @@ export default function SkillItem({ icon, alt, level }) {
             <img
                 src={icon}
                 alt={alt}
-                className="w-12 h-12 mt-6 md:w-20 md:h-20 md:mt-10 lg:w-24 lg:h-24 lg:mt-12 absolute"
+                className="w-12 h-12 mt-6 md:w-20 md:h-20 md:mt-10 lg:w-24 lg:h-24 lg:mt-12 absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300"
             />
+
+            <span
+                className="mt-10 text-xs md:mt-16 md:text-base lg:mt-20 lg:text-xl text-purple-900 font-semibold font-spacemono 
+            absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+                {alt}
+            </span>
         </div>
     );
 }
