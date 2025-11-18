@@ -39,7 +39,7 @@ export default function ContactForm() {
     return (
         <div className="w-full max-w-xl mx-auto mt-20 px-6">
             <h2 className="text-3xl font-game text-purple-950 text-center mb-8">
-                Contact Me
+                CONTACT ME
             </h2>
 
             <form

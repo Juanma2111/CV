@@ -12,6 +12,7 @@ import About from "./components/About";
 }
 import userImage from "./assets/user.jpg";
 import gitIcon from "./assets/logos/github_icon.png";
+import ContactForm from "./components/ContactForm";
 
 function App() {
     return (
@@ -96,6 +97,10 @@ function App() {
                     <h2 className="font-game text-3xl mb-10">ABOUT ME</h2>
 
                     <About />
+                </div>
+
+                <div id="contact">
+                    <ContactForm />
                 </div>
 
                 {/* PRUEBAS -------------------------------------------- */}
