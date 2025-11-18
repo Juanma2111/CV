@@ -114,7 +114,7 @@ function App() {
                         Esto es POR LA CARA pa probar el texto compi
                     </h2>
                     <p className="text-gray-600 mt-4">
-                        Tailwind está funcionando 🎨
+                        Tailwind está funcionando 
                     </p>
                 </div>
             </div>
