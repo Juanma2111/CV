@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center text-center text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-5 place-items-center text-center text-white">
             {/**  ANIMACIÓN */}
             <div
                 id="past"

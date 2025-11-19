@@ -83,7 +83,7 @@ function App() {
 
                 <div
                     id="skills"
-                    className="flex flex-col m-8 mt-14 text-start items-center"
+                    className="flex flex-col m-10 my-14 text-start items-center"
                 >
                     <h2 className="font-game text-3xl mb-10">SKILLS</h2>
 
@@ -92,14 +92,18 @@ function App() {
 
                 <div
                     id="about"
-                    className="flex flex-col m-8 mt-14 text-start items-center"
+                    className="flex flex-col m-10 my-14 text-start items-center"
                 >
                     <h2 className="font-game text-3xl mb-10">ABOUT ME</h2>
 
                     <About />
                 </div>
 
-                <div id="contact">
+                <div
+                    id="contact"
+                    className="flex flex-col m-10 my-24 text-start items-center"
+                >
+                    <h2 className="font-game text-3xl mb-10">CONTACT ME</h2>
                     <ContactForm />
                 </div>
 
@@ -114,7 +118,7 @@ function App() {
                         Esto es POR LA CARA pa probar el texto compi
                     </h2>
                     <p className="text-gray-600 mt-4">
-                        Tailwind está funcionando 
+                        Tailwind está funcionando
                     </p>
                 </div>
             </div>
