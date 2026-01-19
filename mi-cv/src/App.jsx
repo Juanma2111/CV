@@ -13,6 +13,7 @@ import About from "./components/About";
 import userImage from "./assets/user.jpg";
 import gitIcon from "./assets/logos/github_icon.png";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -33,8 +34,11 @@ function App() {
                         <h3 className="my-4 font-spacemono text-lg lg:text-xl">
                             jmmolinsdiaz@gmail.com
                         </h3>
-                        <button className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white flex items-center">
-                            {/* HACERLO FUNCIONAR ---------------------------------------------------------------------------------------- */}
+                        <a
+                            href="https://github.com/Juanma2111/CV"
+                            target="_blank"
+                            className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white flex items-center"
+                        >
                             Ver código fuente
                             <img
                                 src={gitIcon}
@@ -43,7 +47,8 @@ function App() {
                                 height={25}
                                 className="ml-3"
                             />
-                        </button>
+                        </a>
+
                         <button className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white">
                             {/* HACERLO FUNCIONAR ---------------------------------------------------------------------------------------- */}
                             Descargar CV
@@ -103,23 +108,12 @@ function App() {
                     id="contact"
                     className="flex flex-col m-10 my-24 text-start items-center"
                 >
-                    <h2 className="font-game text-3xl mb-10">CONTACT ME</h2>
                     <ContactForm />
                 </div>
 
                 {/* PRUEBAS -------------------------------------------- */}
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className="flex flex-col justify-center items-center">
-                    <h2 className="mt-5">
-                        Esto es POR LA CARA pa probar el texto compi
-                    </h2>
-                    <p className="text-gray-600 mt-4">
-                        Tailwind está funcionando
-                    </p>
+                <div id="footer" className="flex flex-col">
+                    <Footer />
                 </div>
             </div>
         </>
