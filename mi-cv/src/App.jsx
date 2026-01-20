@@ -19,7 +19,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <div className="flex flex-col pt-16 h-screen">
+            <div className="flex flex-col pt-16 h-screen" id="home">
                 <div
                     id="introduction"
                     className="grid grid-cols-1 md:grid-cols-3 gap-5 my-28 md:my-60 px-2 md:px-8 justify-center items-center"
@@ -49,10 +49,13 @@ function App() {
                             />
                         </a>
 
-                        <button className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white">
-                            {/* HACERLO FUNCIONAR ---------------------------------------------------------------------------------------- */}
-                            Descargar CV
-                        </button>
+                        <a
+                            href="/CV/mi-cv/public/" 
+                            target="_blank"
+                            className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white flex items-center"
+                        >
+                            Ver CV
+                        </a>
                     </div>
 
                     {/*Texto animado */}

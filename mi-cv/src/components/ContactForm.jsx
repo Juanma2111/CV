@@ -30,14 +30,14 @@ export default function ContactForm() {
 
         emailjs
             .send(
-                "service_g7t0qow",
-                "template_7kk9uqb",
+                import.meta.env.VITE_EMAIL_SERVICE,
+                import.meta.env.VITE_EMAIL_TEMPLATE,
                 {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
                 },
-                "w1d0NZKUNbLfI78Aw"
+                import.meta.env.VITE_EMAIL_PUBLIC
             )
             .then(() => {
                 setStatus("success");
