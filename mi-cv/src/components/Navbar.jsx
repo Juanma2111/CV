@@ -4,6 +4,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const links = [
+        { name: "CV", href: "/cv/CV_Juan_Manuel_Molins.pdf", newWindow: true },
         { name: "Inicio", href: "#home" },
         { name: "Sobre mi", href: "#about" },
         { name: "Contacto", href: "#contact" },
@@ -34,6 +35,7 @@ export default function Navbar() {
                             <a
                                 href={link.href}
                                 className="block py-2 md:py-0 text-slate-200 hover:text-slate-50 transition"
+                                target={link.newWindow ? "_blank" : "undefined "}
                             >
                                 {link.name}
                             </a>

@@ -50,7 +50,7 @@ function App() {
                         </a>
 
                         <a
-                            href="/CV/mi-cv/public/" 
+                            href="/cv/CV_Juan_Manuel_Molins.pdf" 
                             target="_blank"
                             className="m-2 btn bg-purple-950 hover:bg-purple-800 text-white flex items-center"
                         >
