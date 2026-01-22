@@ -10,7 +10,7 @@ import About from "./components/About";
 {
     /** Others */
 }
-import userImage from "./assets/user.jpg";
+import userImage from "./assets/JM_Foto1.png";
 import gitIcon from "./assets/logos/github_icon.png";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
