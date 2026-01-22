@@ -1,9 +1,7 @@
 - Añadir opción de modo oscuro
 - Añadir más validación al form
 - Foto
-- Botón de CV
-- Arreglar nav
-- Cambiar credenciales de EmailJS en .env
+- Animar nav
 
 
 
